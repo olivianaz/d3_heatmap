@@ -49,7 +49,7 @@ function drawChart(dataset){
 
   var myColor = d3.scaleSequential()
                   .interpolator(d3.interpolateRdBu)
-                  .domain([minTemp, maxTemp]);
+                  .domain([maxTemp, minTemp]);
 
   const xAxis = d3.axisBottom(xScale)
                   .tickValues(xScale.domain().filter(function(d,i){
